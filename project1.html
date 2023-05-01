@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local gym</title>
+    
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{
+        font-family: sans-serif;
+        color: azure;
+        margin: 0px;
+        padding: 0px;
+        background: url('back1.jpg');
+
+    }
+    .left{
+        position: absolute;
+        left: 33px;
+        top: 20px;
+        display: inline-block;
+        /* border: 3px solid red; */
+
+    }
+    .mid{
+        display: block;
+        width: 40%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+        
+
+    }
+    .left img{
+        width: 100px;
+    }
+    .right{
+        position: absolute;
+        right: 33px;
+        top: 20px;
+        display: inline-block;
+        /* border: 3px solid blue; */
+        
+         
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+
+        display: inline-block;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 28px 20px;
+        /* font-weight: bold; */
+    }
+    .navbar li a:hover,.navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        font-family: sans-serif;
+        margin: 15px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .font{
+        font-size: 20px;
+        text-align: center;
+    }
+    .container{
+        font-family: sans-serif;
+        /* border: 2px solid wheat; */
+        margin: 162px 32px;
+        padding: 12px 23px ;
+        width: 33%;
+        border-radius: 8px;
+    }
+    .formgroup input{
+        text-align: center;
+        display: block;
+        margin: 5px auto;
+        padding: 6px;
+        border: 2px solid whitesmoke;
+        border-radius: 8px;
+        width: 504px;
+        font-size: 15px;
+
+
+    }
+    .container h1{
+
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 20%;
+        margin: auto;
+    }
+    /* .formgroup button{
+        width: 103%;
+        background-color: white;
+        color: black;
+    } */
+    .container button{
+        display: block;
+        margin: auto;
+        width: 33%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+          <img src="gymlo.jpg" alt="">
+          <div class="font">Fitness</div>
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FitnesCalculator</a></li>
+                <li><a href="#">Contact us</a></li>
+               </ul>
+        </div>
+        <div class="right">
+          <button class="btn">Call us now</button>
+          <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>join Now</h1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Name">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Gender">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Location">
+            </div>
+
+                <button class="btn">
+                    submit
+                </button>
+           
+        </form>
+    </div>
+    
+</body>
+</html>
